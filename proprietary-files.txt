@@ -115,15 +115,6 @@ odm/vendor/firmware/iris5.fw
 odm/vendor/firmware/iris5_ccf1.fw
 odm/vendor/firmware/iris5_ccf2.fw
 
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libspcom.so
-
 # Sensors
 odm/etc/sensor/config/kona_T0_tcs3408.json
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
