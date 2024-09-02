@@ -29,9 +29,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
@@ -49,11 +46,8 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Touch
-$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
-
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8250-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/instantnoodlep/instantnoodlep-vendor.mk)
+$(call inherit-product, vendor/oneplus/oneplus8pro/oneplus8pro-vendor.mk)
