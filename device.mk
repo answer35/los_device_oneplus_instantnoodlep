@@ -35,10 +35,6 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.oplus
-
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
