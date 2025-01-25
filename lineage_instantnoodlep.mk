@@ -15,6 +15,14 @@ $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# RisingOS
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 865" \
+    RisingMaintainer="answer35"
+# Extras
+TARGET_HAS_UDFPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := lineage_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
 PRODUCT_MANUFACTURER := OnePlus
